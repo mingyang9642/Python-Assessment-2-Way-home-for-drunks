@@ -21,7 +21,7 @@ for i in range(300):
         
 
 #Introduce environment raster
-f = open("E:/Python_2/drunkenv.txt")
+f = open("drunkenv.txt")
 environment = []
 for line in f:
     parsed_line = str.split(line,",")
@@ -60,14 +60,11 @@ fig=ppt.figure()
 ax=fig.add_subplot(111)
 ppt.xlim(0, 300)
 ppt.ylim(0, 300)
-line, = ppt.plot([])
-
+ppt.title("Drunks route map")
 patches = [ ppt.plot([],[], marker="o", ms=10, ls="", mec=None, color="W", 
             label="Drunks (with various colours filled in)" )[0] ]
 ppt.legend(handles=patches, loc='lower right', ncol=2, facecolor="plum", numpoints=1
-           ,bbox_to_anchor=[1, -0.2])
-
-ppt.title("Drunks route map")
+           ,bbox_to_anchor=[1, -0.2]) #Make the legend
 for m in range(num_of_agents):
     ppt.scatter(drunks[m].y, drunks[m].x)    
 ppt.imshow(environment, cmap = ppt.cm.hot, vmin=0.1, vmax=2.5) 
