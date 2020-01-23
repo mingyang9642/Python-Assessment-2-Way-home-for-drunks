@@ -60,7 +60,7 @@ fig=plt.figure()
 ax=fig.add_subplot(111)
 plt.xlim(0, 300)
 plt.ylim(0, 300)
-plt.title("Drunks route map")
+plt.title("Drunks arrival map")
 patches = [ plt.plot([], marker="o", ms=10, ls="", mec=None, color="r", 
             label="Drunks (solid circles filled with various colours)" )[0] ]
 plt.legend(handles=patches, loc='lower left', ncol=2, facecolor="plum", numpoints=1
@@ -74,7 +74,7 @@ fig=plt.figure()
 ax=fig.add_subplot(111)
 plt.xlim(0, 300)
 plt.ylim(0, 300)
-plt.title("Walking density map")
+plt.title("Route density map")
 patches = [ plt.plot([], ms=10, ls="", mec=None, color="w", 
             label="Brighter the colour is, higher the density is." )[0] ]
 plt.legend(handles=patches, loc='lower left', ncol=2, facecolor="plum", numpoints=1

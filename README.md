@@ -23,7 +23,7 @@ Then it is the plotting step. Before using matplot, generating a density map is 
 
 # Running the programme
 - How to run? Running this programme is quite simple. Just download the whole directory to local drive in the same folder, double-click the folder. Now the key is to hold onto SHIFT button, right click at blank space, and open the POWERSHELL (Win10). Type “Python model.py” into the command, the programme runs.
-- What will it be like when it is running?
+- What will it be like when it is running? First, 25 drunks will start moving in sequence, and each person who arrives at home will say "I am home" until all 25 drunks are home, and then the move function stops. Now the first map generates, called Drunks home map (see below), and then generate the second map, called Route density map (see below).
 ![]( /Figure_1.png) 
 ![]( /Figure_2.png)
 
