@@ -5,10 +5,10 @@ Having gone through the first assessment, we learnt about basic parts of Python.
 This task is like a video game. It provides an existed 300*300 raster map as the background and requires us to generate 25 drunks from a pub (which locates at the centre of map) and let them move in a drunk way until they get one of their 25 houses. Their tracks should be displayed in some sort of density map in order to have a look about how they move.
 
 # Prerequisites
-Python 3.7 environment, which can be established by installing Anaconda 3 on the computer. Link: anaconda.com/distribution
+Python 3.7 environment, which can be established by installing Anaconda 4 on the computer. Link: anaconda.com/distribution
 
 # Files/Directories
-There is only one file needed to be input from outside into Python, which is the 300*300 environment raster file(.txt). In the file, the pub is denoted by 1, the houses by the numbers 10-250, and the empty spaces 0. Another two file are Python-coding files(.py), the structure is the same with the first assessment (one is model, and the other one is agentframework).
+There is only one file needed to be input from outside into Python, which is the 300*300 environment raster file (.txt). In the file, the pub is denoted by 1, the houses by the numbers 10-250, and the empty spaces 0. Another two file are Python-coding files (.py), the structure is the same with the first assessment (one is model, and the other one is agentframework).
 
 # Coding progress
 The entire progress can be described in two words, difficult and fun. For a fresh programmer, it is not easy to convert a task written in words into a computer language, and eventually make the computer understand them. The reason why I chose the Drunks home project is because it has similarities with Assessment 1, which is an advanced and extended project.
@@ -23,12 +23,13 @@ Then it is the plotting step. Before using matplot, generating a density map is 
 
 # Running the programme
 - How to run? Running this programme is quite simple. Just download the whole directory to local drive in the same folder, double-click the folder. Now the key is to hold onto SHIFT button, right click at blank space, and open the POWERSHELL (Win10). Type “Python model.py” into the command, the programme runs.
-- What will it be like when it is running? First, 25 drunks will start moving in sequence, and each person who arrives at home will say "I am home" until all 25 drunks are home, and then the move function stops. Now the first map generates, called Drunks home map (see below), and then generate the second map, called Route density map (see below).
+- What will it be like when it is running? Twenty-five drunks will start moving in sequence, and each person who arrives at home will say "I am home" until all 25 drunks are home, and then the move function stops. Now the first map generates, called Drunks home map (see below), and then generate the second map, called Route density map (see below).
 ![]( /Figure_1.png) 
 ![]( /Figure_2.png)
 
 # UML diagram
+![]( /UML.png)
 
 # License
-This project is licensed under the MIT License, see the LICENSE.txt file for details.
+This project is licensed under the MIT License, see the LICENSE file for details.
 
