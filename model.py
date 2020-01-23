@@ -61,7 +61,7 @@ ax=fig.add_subplot(111)
 ppt.xlim(0, 300)
 ppt.ylim(0, 300)
 ppt.title("Drunks route map")
-patches = [ ppt.plot([],[], marker="o", ms=10, ls="", mec=None, color="W", 
+patches = [ ppt.plot([],[], marker="o", ms=10, ls="", mec=None, color="r", 
             label="Drunks (with various colours filled in)" )[0] ]
 ppt.legend(handles=patches, loc='lower right', ncol=2, facecolor="plum", numpoints=1
            ,bbox_to_anchor=[1, -0.2]) #Make the legend
