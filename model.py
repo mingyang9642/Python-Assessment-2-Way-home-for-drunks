@@ -53,7 +53,7 @@ for k in range(num_of_agents):
     while environment[drunks[k].x][drunks[k].y] != house_labels[k]:
         drunks[k].move()
         drunks[k].eat(density)
-    print("I am the No.", k+1, "to arrive", "at", "House", int(house_labels[k]/10) )
+    print("I am the No.", k+1, "arriving", "at", "House", int(house_labels[k]/10) )
 
 #Generate house-arriving map and density map
 fig=plt.figure()
