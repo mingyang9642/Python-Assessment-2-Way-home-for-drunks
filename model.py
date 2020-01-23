@@ -4,7 +4,7 @@
 """
 #Introduce modules
 import agentframework as afm
-import matplotlib.pyplot as ppt
+import matplotlib.pyplot as plt
 
 num_of_agents = 25
 drunks = []
@@ -53,30 +53,30 @@ for k in range(num_of_agents):
     while environment[drunks[k].x][drunks[k].y] != house_labels[k]:
         drunks[k].move()
         drunks[k].eat(density)
-    print("I am the No.", k+1, "to arrive", "at", "House", house_labels[k] )
+    print("I am the No.", k+1, "to arrive", "at", "House", int(house_labels[k]/10) )
 
 #Generate house-arriving map and density map
-fig=ppt.figure()
+fig=plt.figure()
 ax=fig.add_subplot(111)
-ppt.xlim(0, 300)
-ppt.ylim(0, 300)
-ppt.title("Drunks route map")
-patches = [ ppt.plot([],[], marker="o", ms=10, ls="", mec=None, color="r", 
-            label="Drunks (with various colours filled in)" )[0] ]
-ppt.legend(handles=patches, loc='lower right', ncol=2, facecolor="plum", numpoints=1
-           ,bbox_to_anchor=[1, -0.2]) #Make the legend
+plt.xlim(0, 300)
+plt.ylim(0, 300)
+plt.title("Drunks route map")
+patches = [ plt.plot([],[], marker="o", ms=10, ls="", mec=None, color="r", 
+            label="Drunks (solid circles filled with various colours)" )[0] ]
+plt.legend(handles=patches, loc='lower left', ncol=2, facecolor="plum", numpoints=1
+           ,bbox_to_anchor=[-0.19, -0.19]) #Make the legend
 for m in range(num_of_agents):
-    ppt.scatter(drunks[m].y, drunks[m].x)    
-ppt.imshow(environment, cmap = ppt.cm.hot, vmin=0.1, vmax=2.5) 
-ppt.show() 
+    plt.scatter(drunks[m].y, drunks[m].x)    
+plt.imshow(environment, cmap = plt.cm.hot, vmin=0.1, vmax=2.5) 
+plt.show() 
 
-fig=ppt.figure()
+fig=plt.figure()
 ax=fig.add_subplot(111)
-ppt.xlim(0, 300)
-ppt.ylim(0, 300)
-ppt.title("Walking density map")
-ppt.imshow(density) 
-ppt.show() #Brighter the color is, more times drunks walk on, higher the density is.
+plt.xlim(0, 300)
+plt.ylim(0, 300)
+plt.title("Walking density map")
+plt.imshow(density) 
+plt.show() #Brighter the color is, more times drunks walk on, higher the density is.
 
 
 
