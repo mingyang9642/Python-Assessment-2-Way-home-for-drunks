@@ -61,7 +61,7 @@ ax=fig.add_subplot(111)
 plt.xlim(0, 300)
 plt.ylim(0, 300)
 plt.title("Drunks route map")
-patches = [ plt.plot([],[], marker="o", ms=10, ls="", mec=None, color="r", 
+patches = [ plt.plot([], marker="o", ms=10, ls="", mec=None, color="r", 
             label="Drunks (solid circles filled with various colours)" )[0] ]
 plt.legend(handles=patches, loc='lower left', ncol=2, facecolor="plum", numpoints=1
            ,bbox_to_anchor=[-0.19, -0.19]) #Make the legend
@@ -75,8 +75,12 @@ ax=fig.add_subplot(111)
 plt.xlim(0, 300)
 plt.ylim(0, 300)
 plt.title("Walking density map")
+patches = [ plt.plot([], ms=10, ls="", mec=None, color="w", 
+            label="Brighter the colour is, higher the density is." )[0] ]
+plt.legend(handles=patches, loc='lower left', ncol=2, facecolor="plum", numpoints=1
+           ,bbox_to_anchor=[-0.19, -0.19])
 plt.imshow(density) 
-plt.show() #Brighter the color is, more times drunks walk on, higher the density is.
+plt.show() 
 
 
 
